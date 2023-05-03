@@ -1,0 +1,122 @@
+/*
+    Css for pacific Trails ch04
+    Muhammadrazhab Elmurodov
+    5/2/2023
+
+*/
+/*global styles*/
+/*now the background of the whole page*/
+body {
+    background-color: #90c7e3;
+    background-image: linear-gradient(to bottom, #ffffff, #90c7e3);
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    margin-left: auto; margin-right: auto; /*this centers the element inside the wrapper*/
+    width: 80%;
+    min-width: 960px;
+    max-width: 2048px;
+    background-color: white;
+    box-shadow: 3px 3px 3px #333333;
+
+}
+
+header {
+    /*configure background*/
+    background-color: #002171;
+    background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 60px;
+    padding-top: 15px;
+
+    /*text properties*/
+    color: #ffffff;
+    text-align:center;
+
+}
+h1{
+    margin-bottom: 0;
+    font-family: Georgia, "Times New Roman", serif;
+
+}
+
+nav {
+    background-color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+
+}
+nav a{
+    text-decoration: none;
+    padding-left: .5em;
+    padding-right: .5em;
+
+
+}
+
+main{
+    padding: 1px 20px 20px 20px;
+    display: block;
+
+}
+
+
+h2 {
+    color: #1976d2;
+    font-family: Georgia, "Times New Roman", serif;
+    text-shadow: 1px 1px 1px #cccccc;
+}
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #000033;
+
+}
+dt {
+    color: #002171;
+}
+footer {
+    padding: 2em; 
+    /*text style*/
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+
+}
+/*Classes and ids*/
+.resort{
+    color: #1976d2;
+    font-weight: bold;
+
+}
+
+#contact{
+    font-size: 90%;
+
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(coast.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url(yurt.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url(trail.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
