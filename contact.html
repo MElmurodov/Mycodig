@@ -1,0 +1,113 @@
+<html>
+<head>
+    <!--
+        CIS133DA FInal project
+        Author: Muhammadrazhab Elmurodov
+        Date: 5/7/2023
+
+
+        -->
+    <meta charset="UTF-8">
+    <html lang="en" dir="ltr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MAE Installation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/MAElogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+
+    <!------- Contact Us ------->
+    <!--Random location was added because we don't have office yet. THis will get updated in the future-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.9456105333684!2d-111.9318997880192!3d33.50279217325779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e3c30af6b50833%3A0xea3d7e7692af2be8!2sScottsdale%20Fashion%20Square!5e0!3m2!1sen!2sus!4v1683757299951!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Scottsdale, NA NA Building</h5>
+                        <p>Scottsdale, Arizona</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+6021112365</h5>
+                        <p>Monday to Saturday 10 Am to 6 Pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>maeinstallation@gmail.com</h5>
+                        <p>Email us with any question</p>
+                    </span>
+                </div>
+            </div>
+            <!--contact from from www.w3schools.com/-->
+            <div class="contact-col">
+                <form method="post" action="contact-form-handler.php">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-------- footer ---------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>MAE Installation is a trusted professional installation service provider, committed to delivering top-notch solutions and <br> exceptional customer satisfaction with a team of highly skilled technicians.</p>
+        <div class="icons">
+            <!--Social Media icons from google fntawesome-->
+            <a href="https://www.facebook.com/profile.php?id=100070808726622&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+            <i class="fa fa-twitter"></i></a>
+            <i class="fa fa-instagram"></i></a>
+            <i class="fa fa-linkedin"></i></a>
+
+        </div>
+        <a href="about.html" class="footer-link"><p>made with <i class="fa fa-heart-o"></i> by ME</p></a>
+    </section>
+
+
+    <!----JavaScript for toggle menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>    

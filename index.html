@@ -1,74 +1,219 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-      <!--
-          CIS133DA Chapter 2, Pacific Trails 4
-          Author: Muhammadrazhab Elmurodov
-          Date: 5/2/2023
+
+<html>
+<head>
+    <!--
+        CIS133DA FInal project
+        Author: Muhammadrazhab Elmurodov
+        Date: 5/7/2023
 
 
-          -->
+        -->
     <meta charset="UTF-8">
+    <html lang="en" dir="ltr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <!--Linking to main stylesheet-->
-    <link rel="stylesheet" href="pacific.css">
-    <title>Pacific Trails Resort</title>
+    <title>MAE Installation</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Font to match the style from Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <!--font awesomefont from web bootstrapcdn.com -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-  <body>
-      <!--Wireframe content always goes to the body.-->
-      <div id="wrapper">
+<body>
+    <section class="header">
 
-          <header>
-              <!--heading one always goes into the header to tell search engine what the main topic is -->
-              <h1>Pacific Trails Resort</h1>
-          </header>
-          <nav>
-              <!--Creating nav that will be at the top of each page-->
+        <nav>
+            <a href="index.html"><img src="images/MAElogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!--Little js to call these functions for small screen menu.https://www.youtube.com/watch?v=hBJcun2OTGE&t=150s-->
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
 
-              <a href="index.html">Home</a>&nbsp;
-              <a href="yurts.html">Yurts</a>&nbsp;
-              <a href="activities.html">Activities</a>&nbsp;
-              <a href="reservations.html">Reservations</a>&nbsp;
+        <div class="text-box">
+            <h1>Security and Media Solutions for Everyone</h1>
+            <p>Protect your property and enhance your entertainment <br> experience with MAE Installation professional security <br> camera, media system, and home theatre installations for<br> homeowners, shops, markets, and small businesses.</p>
+            <a href="contact.html" class="hero-btn">Visit Us to Know More</a>
+        </div>
+    </section>
 
-          </nav>
-          <!-- my hero image-->
-          <div id="homehero">
-          </div>
+    <!---------- Services ----------->
 
-          <main>
-              <h2>Enjoy Nature in Luxury</h2>
-              <p>
-                  <span class="resort">Pacific Trails Resort</span> offers a special lodging
-                  experience on the California North Coast with
-                  panoramic views of the Pacific Ocean.Your stay
-                  at Pacific Trails Resort includes a sumptuously
-                  appointed private yurt and a cooked-to-order
-                  breakfast each morning.
-              </p>
-              <ul>
-                  <!--unorder list with benefits-->
-                  <li>Unwind</li>
-                  <li>Explore</li>
-                  <li>Relax</li>
-                  <li>Savor</li>
-              </ul>
-              <div id="contact">
-                  <span class="resort">Pacific Trails Resort</span> <br>
+    <section class="services">
+        <h1>All Services</h1>
+        <p>We offer the best services in valley with more than 10 years of experience. You say it and we do it</p>
+        <div class="row">
+            <div class="services-col">
+                <h3>Expert Home Theatre <br>Installation</h3>
+                <p>
 
-                  12010 Pacific Trails Road <br>
+                    We specialize in creating exceptional home theatre systems for an unparalleled cinematic experience at home. Our experts design bespoke systems tailored to your preferences, including custom seating, lighting, and audio-visual equipment. With meticulous installation and ongoing support, we ensure optimal performance and deliver exceptional quality. Trust us for an exceptional home theatre experience.
+                </p>
+            </div>
+            <div class="services-col">
+                <h3>Professional Security Camera<br> Installations</h3>
+                <p>We offer professional security camera installation for residential and commercial properties. Our experienced team ensures proper installation using the latest technology and high-quality equipment. We conduct site surveys, recommend suitable camera types, and set up secure footage capture and storage. Trust us for reliable and effective security system installation to protect your property.</p>
+            </div>
+            <div class="services-col">
+                <h3>
+                    Media System Installation
+                </h3>
+                <p>We specialize in professional media system installation for homes and businesses. Our experienced team ensures a seamless and enjoyable experience by recommending the best equipment, scheduling convenient installations, and providing thorough training. With our high-quality equipment and attention to detail, you can relax while we create your ideal media setup.</p>
+            </div>
+        </div>
+    </section>
 
-                  Zephyr, CA 95555 <br>
+    <!---------- Business Locations ---------->
 
-                  888-555-5555 <br>
-              </div>
-          </main>
-          <footer>
+    <section class="Location">
+        <h1>Operation Locations in USA</h1>
+        <p>We operate in three states currently and we planing to expand and reach to all corners of USA</p>
+        <div class="row">
+            <div class="location-col">
+                <img src="images/vegas.png">
+                <div class="layer">
+                    <h3>LOS VEGAS<br>NEVADA</h3>
+                </div>
+            </div>
+            <div class="location-col">
+                <img src="images/phoenix.png">
+                <div class="layer">
+                    <h3>PHOENIX<br>ARIZONA</h3>
+                </div>
+            </div>
+            <div class="location-col">
+                <img src="images/denver.png">
+                <div class="layer">
+                    <h3>DENVER<br>COLORADO</h3>
+                </div>
+            </div>
 
-              Copyright &copy; 2020 Pacific Trails Resort<br><br>
-              <a href="mailto:M.elmurodov@gmail.com">muhammadrazhab.elmurodov@email.com</a>
+        </div>
+    </section>
+
+    <!---------- Futures & Benefits & Time---------->
+
+    <section class="futures">
+        <h1>Futures | Benefits | Time</h1>
+        <p>We are here to offer you our expertise in timely manner so that you can have pieace of mind.  </p>
+        <div class="row">
+            <div class="futures-col">
+                <img src="images/white2.png">
+                <h3>Modification to your needs</h3>
+                <p>
+                    Expert installation of security cameras <br>
+                    Customized media system design and installation<br>
+                    
+                </p>
+            </div>
+            <div class="futures-col">
+                <img src="images/white3.png">
+                <h3>Giving you peace of mind</h3>
+                <p>
+                    Peace of mind knowing that your property is protected with top-of-the-line security cameras<br>
+                    Improved productivity and efficiency with easy-to-use media systems for your business<br>
+                    
+                </p>
+            </div>
+            <div class="futures-col">
+                <img src="images/white4.png">
+                <h3>Promt and Efficiency</h3>
+                <p>
+                    Our company values your time and strives to provide prompt and efficient service to all customer. <br>
+                    We understand the importance of timely assistance. Our team is dedicated to responding promptly to customer inquiries and service requests.<br>
+                    
+                </p>
+            </div>
+        </div>
+    </section>
 
 
-          </footer>
-      </div>
-  </body>
+    <!---------- testimonials ---------->
+
+    <section class="testimonials">
+        <h1>What Our Cutomers Says</h1>
+        <p>Customer sutisfaction is out priority</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/user1.png">
+                <div>
+                    <p>"I am extremely satisfied with the camera installation service provided by this company. The technicians were highly professional and efficient. They installed the cameras at strategic locations, ensuring optimal coverage for my property. The quality of the equipment is excellent, and the team took the time to explain how everything works. I feel much more secure knowing that my property is under surveillance. I highly recommend their services."</p>
+                    <h3>Lola Ann</h3>
+                    <!--star icon from google fontawesome-->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user2.png">
+                <div>
+                    <p>"I recently had cameras installed by this company, and I couldn't be happier with the service. The technicians were courteous, skilled, and thorough in their work. They patiently answered all my questions and provided a clear demonstration of how to access and manage the camera system. The installation was completed within the agreed-upon timeframe, and the results are fantastic. The cameras are of high quality and offer great clarity. I appreciate the professionalism and expertise displayed by the team."</p>
+                    <h3>Syed T***</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!------ Call To Action ------>
+
+    <section class="cta">
+
+        <h1>If you have any questions, feedback, please don't hesitate to contact us.</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+
+    </section>
+
+    <!-------- footer ---------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>MAE Installation is a trusted professional installation service provider, committed to delivering top-notch solutions and <br> exceptional customer satisfaction with a team of highly skilled technicians.</p>
+        <div class="icons"> <!--Social Media icons from google fntawesome-->
+            <a href="https://www.facebook.com/profile.php?id=100070808726622&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+            <i class="fa fa-twitter"></i></a>
+            <i class="fa fa-instagram"></i></a>
+            <i class="fa fa-linkedin"></i></a>
+
+        </div>
+        <a href="about.html" class="footer-link"><p>made with <i class="fa fa-heart-o"></i> by ME</p></a>
+    </section>
+
+
+    <!----JavaScript for menu for smaller screens  www.geeksforgeeks.org---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
 </html>
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+<html>
+<head>
+    <!--
+        CIS133DA FInal project
+        Author: Muhammadrazhab Elmurodov
+        Date: 5/7/2023
+
+
+        -->
+    <meta charset="UTF-8">
+    <html lang="en" dir="ltr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us-MAE Installation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/MAElogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+
+    <!------- about us content -------->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Mission statement</h1>
+                <p>At MAE Installation, we are committed to providing our clients with the highest quality technology installations and services. Our mission is to help our customers enhance their security and entertainment experiences through state-of-the-art technology solutions. We strive to exceed expectations with our professionalism, expertise, and attention to detail in every project we undertake.</p>
+                <a href="services.html" class="hero-btn red-btn">OUR SERVICES</a>
+            </div>
+            <div class="about-col">
+                <img src="images/team.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-------- footer ---------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>MAE Installation is a trusted professional installation service provider, committed to delivering top-notch solutions and <br> exceptional customer satisfaction with a team of highly skilled technicians.</p>
+        <div class="icons">
+            <!--Social Media icons from google fntawesome-->
+            <a href="https://www.facebook.com/profile.php?id=100070808726622&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+            <i class="fa fa-twitter"></i></a>
+            <i class="fa fa-instagram"></i></a>
+            <i class="fa fa-linkedin"></i></a>
+
+        </div>
+        <a href="about.html" class="footer-link"><p>made with <i class="fa fa-heart-o"></i> by ME</p></a>
+    </section>
+
+
+    <!----JavaScript for toggle menu---->
+    <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+    </script>
+
+</body>
+</html>    
